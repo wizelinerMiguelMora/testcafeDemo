@@ -1,0 +1,24 @@
+{
+  "name": "miguel_testing",
+  "version": "1.0.0",
+  "description": "This is a framework with the roles application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "testcafeChrome": "testcafe chrome tests/*",
+    "testcafeSafari": "testcafe safari tests/*",
+    "testcafeFirefox": "testcafe firefox tests/*",
+    "testReport": "testcafe chrome tests/* --reporter html:reports/report.html"
+  },
+  "author": "Miguel Mora",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.6.0",
+    "node": "^15.14.0",
+    "testcafe": "^1.18.2",
+    "testcafe-reporter-html": "^1.4.6"
+  },
+  "directories": {
+    "test": "tests"
+  }
+}
