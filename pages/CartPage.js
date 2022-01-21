@@ -13,17 +13,17 @@ class CartPage {
 
     async validCartPageSI(){
         await t.click(InventoryPage.cartBotton)
-        await t.expect(this.cartbackpack.exists).ok()
+        await t.expect(this.backpack.exists).ok()
     }
 
     async validCartPageMI(){
         await t.click(InventoryPage.cartBotton)
-        await t.expect(this.backpack.exists).ok()
-        await t.expect(this.bikeLight.exists).ok()
-        await t.expect(this.tsbhirt.exists).ok()
-        await t.expect(this.jacekt.exists).ok()
-        await t.expect(this.onesie.exists).ok()
-              t.expect(this.tshirtRed.exists).ok()
+               .expect(this.backpack.exists).ok()
+               .expect(this.bikeLight.exists).ok()
+               .expect(this.tsbhirt.exists).ok()
+               .expect(this.jacekt.exists).ok()
+               .expect(this.onesie.exists).ok()
+              //.expect(this.tshirtRed.exists).ok()
     }
 }
 

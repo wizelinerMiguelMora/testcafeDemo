@@ -3,6 +3,7 @@ import InventoryPage from './InventoryPage'
 
 class CartPage {
     constructor(){
+        this.checkoutBotton = Selector('#checkout')
         this.backpack = Selector ('#item_4_title_link')
         this.bikeLight = Selector('#item_0_title_link')
         this.tsbhirt = Selector('#item_1_title_link')

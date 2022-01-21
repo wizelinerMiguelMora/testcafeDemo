@@ -2,10 +2,11 @@ import dotenv from 'dotenv'
 dotenv.config()
 
 export const INDEXMESSAGES = {
+    LOCKEDMESSAGE: process.env.ERRORLOCKEDUSER,
     USERMESSAGE: process.env.ERRORUSER,
+    EMPTYUSER: process.env.EMPTYUSER,
     PASSWORDMESSAGE: process.env.ERRORPASSWORD,
     INVALIDLOGIN: process.env.ERRORLOGIN,
-    LOCKEDMESSAGE: process.env.ERRORLOCKEDUSER
 }
 
 export const CHECKOUTMESSAGES = {

@@ -8,7 +8,8 @@
     "testcafeChrome": "testcafe chrome tests/*",
     "testcafeSafari": "testcafe safari tests/*",
     "testcafeFirefox": "testcafe firefox tests/*",
-    "testReport": "testcafe chrome tests/* --reporter html:reports/report.html"
+    "testChromeReport": "testcafe chrome tests/* --reporter html:reports/report.html",
+    "testcafeSafariReport": "testcafe safari tests/* --reporter html:reports/report.html"
   },
   "author": "Miguel Mora",
   "license": "ISC",

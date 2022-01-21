@@ -9,12 +9,12 @@ export const USERNAMES = {
     PERFORM: process.env.PERFORM_USER,
     LOCKED: process.env.LOCKED_USER,
     INVALID: process.env.INVALID_USER,
-    NONE: process.env.NONE_USER
+    NONE: process.env.NONEINFP
 }
 
 
 export const PASSWORDS = {
     CORRECT: process.env.PASSWORD,
     INCORRECT: process.env.INVALID_PASSWORD,
-    NONE: process.env.NONE_PASSWORD
+    NONE: process.env.NONEINFO
 }

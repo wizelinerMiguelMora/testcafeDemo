@@ -1,4 +1,5 @@
 import { Selector, t } from 'testcafe'
+import { USERINFO } from '../data/CheckoutData'
 
 class CheckoutS1 {
 
@@ -15,21 +16,27 @@ class CheckoutS1 {
     }
 
     async fillInfo(first, last, pc) {
-        if (first == ''){
+        if (first == USERINFO.NONEINFO){
             await t.click(this.firstName)
-            await t.pressKey('tab')
+                   .pressKey('tab')
         }
-        else { await t.typeText (this.firstName,first) }
-        if (last == '') {
-            await t.click( this.lastName)
-            await t.pressKey('tab')
+        else { 
+            await t.typeText(this.firstName, first) 
         }
-        else { await t.typeText( this.lastName, last) }
-        if (pc == '') {
+        if (last == USERINFO.NONEINFO) {
+            await t.click(this.lastName)
+                   .pressKey('tab')
+        }
+        else { 
+            await t.typeText( this.lastName, last) 
+        }
+        if (pc == USERINFO.NONEINFO) {
             await t.click(this.postalCode)
-            await t.pressKey('tab')
+                   .pressKey('tab')
         }
-        else { await t.typeText(this.postalCode, pc) }
+        else { 
+            await t.typeText(this.postalCode, pc) 
+        }
         await t.click(this.continueBotton)
     }
 }
