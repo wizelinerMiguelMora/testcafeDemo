@@ -5,16 +5,20 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "testcafeChrome": "testcafe chrome tests/*",
-    "testcafeSafari": "testcafe safari tests/*",
-    "testcafeFirefox": "testcafe firefox tests/*",
-    "testChromeReport": "testcafe chrome tests/* --reporter html:reports/report.html",
-    "testcafeSafariReport": "testcafe safari tests/* --reporter html:reports/report.html"
+    "testcafeChrome": "testcafe chrome frontend/tests/*",
+    "testcafeSafari": "testcafe safari frontend/tests/*",
+    "testcafeFirefox": "testcafe firefox frontend/tests/*",
+    "testChromeReport": "testcafe chrome frontend/tests/* --reporter html:reports/report.html",
+    "testcafeSafariReport": "testcafe safari frontend/tests/* --reporter html:reports/report.html",
+    "testNewman": "newman run '/Users/miguel.hm/Desktop/Miguel_Testing/backend/collections/Todoist.postman_collection.json' -e '/Users/miguel.hm/Desktop/Miguel_Testing/backend/envVariables/Todoist.postman_environment.json'",
+    "testNewmanReport": "newman run '/Users/miguel.hm/Desktop/Miguel_Testing/backend/collections/Todoist.postman_collection.json' -e '/Users/miguel.hm/Desktop/Miguel_Testing/backend/envVariables/Todoist.postman_environment.json' -r htmlextra --reporter-htmlextra-export '/Users/miguel.hm/Desktop/Miguel_Testing/backend/report/report.html'"
   },
   "author": "Miguel Mora",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^8.6.0",
+    "newman": "^5.3.1",
+    "newman-reporter-htmlextra": "^1.22.4",
     "node": "^15.14.0",
     "testcafe": "^1.18.2",
     "testcafe-reporter-html": "^1.4.6"
